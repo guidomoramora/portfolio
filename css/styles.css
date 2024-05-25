@@ -45,3 +45,18 @@ a:hover {
 a:hover {
     color: #f00;
 }
+
+.linkedin-link {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Elimina el subrayado por defecto */
+}
+
+.linkedin-link:hover {
+    color: white; /* Color del texto del enlace cuando el mouse está sobre él */
+    text-decoration: underline; /* Subrayado al pasar el mouse, opcional */
+}
+
+.linkedin-link img {
+    vertical-align: middle;
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
