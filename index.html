@@ -19,6 +19,12 @@
                 <li><a href="#cursos">Cursos</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
+            <div id="music-player">
+                <button id="prev">Prev</button>
+                <button id="play">Play</button>
+                <button id="next">Next</button>
+                <audio id="audio" controls style="display: none;"></audio>
+            </div>
         </nav>
     </header>
 
@@ -30,8 +36,11 @@
 
     <section id="tecnologias">
         <h2>Tecnologias</h2>
-        <!-- Aquí puedes añadir tus tecnologías -->
+        <div class="image-container">
+            <div class="image-wrapper"></div>
+        </div>
     </section>
+    <script src="js/scriptTecnologias.js"></script>
 
     <section id="projects">
     <h2>proyectos</h2>
@@ -58,5 +67,7 @@
     </section>
 
     <script src="js/script.js"></script>
+    <script src="js/scriptTecnologias.js"></script>
+    <script src="js/scriptMusicPlayer.js"></script>
 </body>
 </html>
