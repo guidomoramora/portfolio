@@ -45,6 +45,24 @@ a:hover {
 a:hover {
     color: #f00;
 }
+/* Responsive navigation */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+
+
 /* linked in  */
 .linkedin-link {
     color: white; /* Color del texto del enlace */
@@ -60,18 +78,40 @@ a:hover {
     vertical-align: middle;
     margin-right: 5px; /* Espacio entre el icono y el texto */
 }
+
+/* acerca de */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
 /* proyectos */
 #projects {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Centrará el contenedor de proyectos horizontalmente */
 }
 .projects-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* Centrará las imágenes dentro del contenedor */
 }
 .project {
     position: relative;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrará los elementos dentro de cada contenedor de proyecto */
 }
 .project-image {
     width: 200px;
@@ -88,6 +128,7 @@ a:hover {
 .project-title {
     margin-top: 10px;
     font-size: 1.2em;
+    text-align: center; /* Centrará el texto del título */
 }
 /* technologias */
 

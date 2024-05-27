@@ -1,7 +1,7 @@
 img1="JAVA"
 img2="R"
 img3="SCALA"
-img4="APACHE_SPARK"
+img4="SPARK"
 img5="SQL"
 
 
