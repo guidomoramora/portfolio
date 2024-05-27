@@ -1,36 +1,23 @@
 // scriptMusicPlayer.js
 document.addEventListener("DOMContentLoaded", function() {
-    const musicPath = 'data/music/';
     const audio = document.getElementById('audio');
     const playButton = document.getElementById('play');
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
 
-    let tracks = [];
+    let tracks = ['data/music/neon-gaming-128925.mp3'];
     let currentTrackIndex = 0;
 
-    fetch(musicPath)
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(data, 'text/html');
-            tracks = Array.from(htmlDoc.querySelectorAll('a'))
-                .map(link => link.href)
-                .filter(href => href.endsWith('.mp3'));
-
-            if (tracks.length > 0) {
-                audio.src = tracks[currentTrackIndex];
-            }
-        })
-        .catch(error => console.error('Error fetching the music files:', error));
+    audio.src = tracks[currentTrackIndex];
+    audio.play(); // Reproduce la música al cargar la página
 
     playButton.addEventListener('click', () => {
         if (audio.paused) {
             audio.play();
-            playButton.textContent = 'Pause';
+            playButton.textContent = '♫';
         } else {
             audio.pause();
-            playButton.textContent = 'Play';
+            playButton.textContent = 'X ♫';
         }
     });
 

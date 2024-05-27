@@ -3,11 +3,6 @@ img2="R"
 img3="SCALA"
 img4="APACHE_SPARK"
 img5="SQL"
-img6="JAVA"
-img7="R"
-img8="SCALA"
-img9="APACHE SPARK"
-img10="SQL"
 
 
 
