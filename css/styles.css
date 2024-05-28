@@ -80,20 +80,32 @@ a:hover {
 }
 
 /* acerca de */
+/* About section */
 #about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
     text-align: center;
+    padding: 40px 20px;
+
+}
+
+#about h2 {
+    margin-bottom: 20px;
 }
 
 .profile-photo {
+    display: block;
+    margin: 0 auto 20px; /* Añadir margen inferior */
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 10px;
 }
+
+#about p {
+    max-width: 800px; /* Limitar el ancho del texto */
+    margin: 0 auto;
+    padding: 0 20px; /* Añadir padding para mejor legibilidad */
+    text-align: justify; /* Justificar el texto */
+}
+
 
 /* proyectos */
 #projects {
@@ -170,14 +182,64 @@ img {
 
 /* music player */
 
-
 #music-player {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 #music-player button {
     margin: 0 5px;
     padding: 5px 10px;
     cursor: pointer;
+}
+
+/* Certificaciones*/
+
+#certs {
+    text-align: center;
+    padding: 20px;
+}
+
+.certs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cert {
+    margin: 10px;
+    text-align: center;
+}
+
+.cert-image {
+    width: 150px;
+    height: 150px;
+}
+
+.cert-title {
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+/* Contact section */
+#contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.linkedin-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2em;
+}
+
+.linkedin-link .linkedin-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
