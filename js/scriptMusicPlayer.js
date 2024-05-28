@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentTrackIndex = 0;
 
     audio.src = tracks[currentTrackIndex];
-    audio.play(); // Reproduce la música al cargar la página
+    audio.volume = 0.1; // Ajusta el volumen si es necesario
 
     playButton.addEventListener('click', () => {
         if (audio.paused) {
